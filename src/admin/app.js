@@ -23,7 +23,8 @@ const config = {
       "Settings.profile.form.section.experience.interfaceLanguageHelp":
         "Preference changes will apply only to you.",
     }
-  }
+  },
+  tutorials: false
 };
 
 const bootstrap = (app) => {
