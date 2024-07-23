@@ -10,16 +10,23 @@
     "strapi": "strapi",
     "deploy": "strapi deploy"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.25.2",
-    "@strapi/plugin-users-permissions": "4.25.2",
-    "@strapi/plugin-i18n": "4.25.2",
+    "@emotion/styled": "^11.12.0",
+    "@mui/material": "^5.16.4",
+    "@strapi/helper-plugin": "^4.25.4",
+    "@strapi/icons": "^1.19.0",
     "@strapi/plugin-cloud": "4.25.2",
+    "@strapi/plugin-i18n": "4.25.2",
+    "@strapi/plugin-users-permissions": "4.25.2",
+    "@strapi/strapi": "4.25.2",
     "better-sqlite3": "8.6.0",
+    "dotenv": "^16.4.5",
+    "pg": "^8.12.0",
     "react": "^18.0.0",
+    "react-data-table-component": "^7.6.2",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
+    "strapi-generate": "^3.6.11",
     "styled-components": "5.3.3"
   },
   "author": {
