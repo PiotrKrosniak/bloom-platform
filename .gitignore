@@ -115,3 +115,4 @@ build
 .strapi-cloud.json
 
 rasa/rasa_env
+rasa/.rasa
