@@ -1,4 +1,4 @@
-# 🚀 Getting started with Strapi
+# Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
 
@@ -32,31 +32,53 @@ npm run build
 yarn build
 ```
 
-## ⚙️ Deployment
+# Setup Rasa in Local
 
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
+
+### Create a Virtual Environment
+
+First, create a virtual environment to isolate your Rasa dependencies. You can do this using `venv`:
+
+```bash
+python -m venv rasa_env
+
+### active env 
+.\rasa_env\Scripts\activate
 
 ```
-yarn strapi deploy
+### Install Rasa
+
+```bash
+pip install uv
+
+uv pip install rasa-pro --extra-index-url=https://europe-west3-python.pkg.dev/rasa-releases/rasa-pro-python/simple/
+
 ```
 
-## 📚 Learn more
+### Set licence
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+##Get license key from rasa developer
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+"https://rasa.com/rasa-pro-developer-edition-license-key-request/"
 
-## ✨ Community
+``` Shell
+[System.Environment]::SetEnvironmentVariable('RASA_PRO_LICENSE','<your-license-string>','USER')
 
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+```
 
----
+### Rasa Run
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
-# bloom-user
+```bash
+rasa run -m models --enable-api --cors "*"
+
+```
+
+## Required Dependencies
+``` bash
+react: 16.8.3 
+react-dom: 16.8.3
+rasa-webchat: 1.0.1
+python: 3.10.5
+```
+
+
