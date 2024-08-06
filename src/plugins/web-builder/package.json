@@ -16,7 +16,6 @@
     "prop-types": "^15.7.2",
     "rasa-webchat": "^1.0.1",
     "react": "^16.8.3",
-    "react-chat-widget": "^3.1.4",
     "react-dom": "^16.8.3"
   },
   "devDependencies": {
