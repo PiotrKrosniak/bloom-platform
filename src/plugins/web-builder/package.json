@@ -1,0 +1,43 @@
+{
+  "name": "web-builder",
+  "version": "0.0.0",
+  "description": "This is the description of the plugin.",
+  "proxy": "http://localhost:5005",
+  "strapi": {
+    "name": "web-builder",
+    "description": "Description of Web Builder plugin",
+    "kind": "plugin",
+    "displayName": "Web Builder"
+  },
+  "dependencies": {
+    "@strapi/design-system": "^1.6.3",
+    "@strapi/helper-plugin": "^4.6.0",
+    "@strapi/icons": "^1.6.3",
+    "prop-types": "^15.7.2",
+    "rasa-webchat": "^1.0.1",
+    "react": "^16.8.3",
+    "react-chat-widget": "^3.1.4",
+    "react-dom": "^16.8.3"
+  },
+  "devDependencies": {
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6"
+  },
+  "peerDependencies": {
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.1"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "maintainers": [
+    {
+      "name": "A Strapi developer"
+    }
+  ],
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
