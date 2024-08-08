@@ -1,6 +1,17 @@
 # Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+### To install dependecies
+```
+cd bloom-platform/src/plugins/web-builder
+npm install --legacy-peer-deps
+```
+then
+```
+cd /bloom-platform/
+npm i
+```
+
 
 ### `develop`
 
@@ -35,15 +46,18 @@ yarn build
 # Setup Rasa in Local
 
 
-### Create a Virtual Environment
+### Create a Virtual Environment for python 3.10
 
 First, create a virtual environment to isolate your Rasa dependencies. You can do this using `venv`:
 
 ```bash
-python -m venv rasa_env
+python3.10 -m venv rasa_env
 
-### active env 
+### active env for windows
 .\rasa_env\Scripts\activate
+
+## to activate env linux
+source rasa_env/bin/activate
 
 ```
 ### Install Rasa
@@ -64,6 +78,11 @@ uv pip install rasa-pro --extra-index-url=https://europe-west3-python.pkg.dev/ra
 ``` Shell
 [System.Environment]::SetEnvironmentVariable('RASA_PRO_LICENSE','<your-license-string>','USER')
 
+```
+
+#for linux
+``` Shell
+export RASA_PRO_LICENSE="xxx"
 ```
 
 ### Rasa Run
