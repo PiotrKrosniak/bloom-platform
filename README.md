@@ -59,6 +59,7 @@ python3.10 -m venv rasa_env
 ## to activate env linux
 source rasa_env/bin/activate
 
+
 ```
 ### Install Rasa
 
@@ -85,13 +86,27 @@ uv pip install rasa-pro --extra-index-url=https://europe-west3-python.pkg.dev/ra
 export RASA_PRO_LICENSE="xxx"
 ```
 
+### Set chenges in files
+
+"""
+`endpoint.yml`
+action_endpoint:
+ url: "http://localhost:5055/webhook"
+
+
+
 ### Rasa Run
 
 ```bash
 rasa run -m models --enable-api --cors "*"
 
 ```
+### Rasa Run action
 
+```bash
+## Run in different terminal 
+rasa run actions --port 5055
+```
 ## Required Dependencies
 ``` bash
 react: 16.8.3 
