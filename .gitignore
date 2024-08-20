@@ -116,3 +116,5 @@ build
 
 rasa/rasa_env
 rasa/.rasa
+package-lock.json
+src/plugins/web-builder/package-lock.json
